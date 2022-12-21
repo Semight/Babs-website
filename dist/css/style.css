@@ -1,0 +1,817 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::root {
+  --primary-color: $($primary-color);
+  --secondary-color: $($secondary-color);
+  --babs-color: $($babs-color);
+  --container-color: $($container-color);
+  --box-color: $($box-color);
+  --paragraph-color: $($paragraph-color);
+  --btn-group: $($btn-group);
+  --content-color: $($content-color);
+  --footer-color: $($footer-color);
+  --footer-p: $($footer-p);
+}
+
+.dark-theme {
+  --primary-color: #190f1f;
+  --secondary-color: #fff;
+  --babs-color: #7B4A9B;
+  --paragraph-color: rgba(229, 219, 235, 0.8);
+  --content-color: rgba(123, 74, 155, 0.2);
+  --footer-color: #140C1B;
+  --footer-p: rgba(229, 219, 235, 0.7);
+}
+
+body {
+  margin: 0 auto;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: "Poppins", sans-serif;
+}
+body .hero {
+  margin-left: 113px;
+  margin-right: 120px;
+}
+body .hero nav {
+  display: flex;
+  justify-content: space-between;
+}
+body .hero nav h1 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24.2px;
+  color: var(--babs-color);
+  margin-top: 32px;
+}
+body .hero nav #icon {
+  margin-top: 30px;
+  cursor: pointer;
+  width: 25px;
+}
+body .container {
+  display: flex;
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-top: 32px;
+  background: rgba(123, 74, 155, 0.1019607843);
+  border-radius: 32px;
+  height: 654px;
+}
+body .container .info {
+  margin-top: 159px;
+  margin-left: 92px;
+}
+body .container .info h1 {
+  width: 386px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+body .container .info p {
+  margin: 28px 0;
+  width: 416px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+}
+body .container .info button {
+  width: 164px;
+  height: 48px;
+  background: #7B4A9B;
+  color: #fff;
+  padding: 10px 20px 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  line-height: 28px;
+  gap: 10px;
+  cursor: pointer;
+}
+body .scrolling {
+  position: relative;
+  width: 100%;
+  height: 63px;
+  overflow: hidden;
+  margin-top: 36px;
+}
+body .scrolling .text-scrolling {
+  font-family: "Mohave", sans-serif;
+  position: absolute;
+  color: rgba(123, 74, 155, 0.3);
+  font-size: 45px;
+  line-height: 62.69px;
+  font-weight: 700;
+  text-align: center;
+  transform: translateX(100%);
+  -webkit-animation: scrolling 40s linear infinite;
+          animation: scrolling 40s linear infinite;
+}
+@-webkit-keyframes scrolling {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes scrolling {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+body .m-collection {
+  text-align: center;
+  margin-top: 20px;
+}
+body .m-collection h2 {
+  margin-bottom: 8px;
+  font-size: 24px;
+  line-height: 44px;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+body .m-collection p {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+body .f-details {
+  margin-left: 120px;
+  margin-right: 117px;
+  margin-top: 72px;
+  background: rgba(123, 74, 155, 0.1019607843);
+  height: 277px;
+  border-radius: 32px;
+}
+body .f-details .details {
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
+  margin-right: 94px;
+  padding-top: 65px;
+  padding-bottom: 64px;
+}
+body .f-details .details .details1 {
+  flex: 1;
+  margin-bottom: 12px;
+}
+body .f-details .details .details2 {
+  flex: 1;
+  margin-bottom: 16px;
+}
+body .f-details .details .details3 {
+  flex: 1;
+  margin-bottom: 16px;
+}
+body .f-details .details h2 {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+body .f-details .details p {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 500;
+  width: 273px;
+  color: var(--secondary-color);
+}
+body .about {
+  margin-left: 156px;
+}
+body .about .d-flex {
+  display: flex;
+  gap: 80px;
+}
+body .about .d-flex img {
+  height: 463px;
+  width: 463px;
+  border-radius: 32px;
+  margin-top: 72px;
+}
+body .about .d-flex .r-flex {
+  margin-top: 112px;
+}
+body .about .d-flex .r-flex p {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 500;
+  color: var(--babs-color);
+  margin-bottom: 16px;
+}
+body .about .d-flex .r-flex h1 {
+  font-size: 24px;
+  line-height: 44px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 8px;
+}
+body .about .d-flex .r-flex .bio {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 500;
+  color: var(--paragraph-color);
+  margin-bottom: 32px;
+  width: 573px;
+}
+body .about .d-flex .r-flex .btn {
+  width: 138px;
+  height: 48px;
+  background: #7B4A9B;
+  color: #fff;
+  padding: 10px 20px 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  line-height: 28px;
+  gap: 10px;
+  cursor: pointer;
+}
+body .about .d-flex .r-flex .social-icons {
+  display: flex;
+  align-items: center;
+  padding-left: 0px;
+  gap: 23.62px;
+}
+body .about .d-flex .r-flex .social-icons a i {
+  border: 1px solid #7B4A9B;
+  list-style: none;
+  border-radius: 50%;
+  height: 31.62px;
+  margin-top: 32px;
+  padding-top: 7px;
+  text-align: center;
+  width: 31.62px;
+}
+body .lorem {
+  font-family: "Inter", sans-serif;
+}
+body .lorem .lorem-ipsum {
+  text-align: center;
+  margin-top: 72px;
+}
+body .lorem .lorem-ipsum h1 {
+  font-size: 24px;
+  line-height: 44px;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+body .lorem .lorem-ipsum p {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 500;
+  color: var(--paragraph-color);
+}
+body .lorem .achievement, body .lorem .achievement1, body .lorem .achievement2, body .lorem .achievement3, body .lorem .achievement4 {
+  display: flex;
+  gap: 132px;
+  margin-top: 85.5px;
+  margin-left: 138px;
+  margin-right: 138px;
+}
+body .lorem .achievement .right-text, body .lorem .achievement1 .right-text, body .lorem .achievement2 .right-text, body .lorem .achievement3 .right-text, body .lorem .achievement4 .right-text {
+  width: 621px;
+}
+body .lorem .achievement .right-text h1, body .lorem .achievement1 .right-text h1, body .lorem .achievement2 .right-text h1, body .lorem .achievement3 .right-text h1, body .lorem .achievement4 .right-text h1 {
+  font-size: 24px;
+  line-height: 44px;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+body .lorem .achievement .right-text li, body .lorem .achievement1 .right-text li, body .lorem .achievement2 .right-text li, body .lorem .achievement3 .right-text li, body .lorem .achievement4 .right-text li {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 500;
+  color: var(--paragraph-color);
+}
+body .lorem .achievement .border, body .lorem .achievement1 .border, body .lorem .achievement2 .border, body .lorem .achievement3 .border, body .lorem .achievement4 .border {
+  display: flex;
+  position: relative;
+  gap: 99px;
+}
+body .lorem .achievement .border .border-left, body .lorem .achievement1 .border .border-left, body .lorem .achievement2 .border .border-left, body .lorem .achievement3 .border .border-left, body .lorem .achievement4 .border .border-left {
+  width: 156px;
+  height: 221px;
+  border-radius: 100px 0 0 100px;
+  background-color: rgba(123, 74, 155, 0.3);
+}
+body .lorem .achievement .border h1, body .lorem .achievement1 .border h1, body .lorem .achievement2 .border h1, body .lorem .achievement3 .border h1, body .lorem .achievement4 .border h1 {
+  color: rgba(123, 74, 155, 0.8);
+  position: absolute;
+  left: 8rem;
+  top: 4rem;
+  font-size: 58.98px;
+  font-weight: 700;
+  line-height: 103.06px;
+}
+body .lorem .achievement .border .a-year, body .lorem .achievement1 .border .a-year, body .lorem .achievement2 .border .a-year, body .lorem .achievement3 .border .a-year, body .lorem .achievement4 .border .a-year {
+  left: 6rem;
+}
+body .lorem .achievement .border .border-right, body .lorem .achievement1 .border .border-right, body .lorem .achievement2 .border .border-right, body .lorem .achievement3 .border .border-right, body .lorem .achievement4 .border .border-right {
+  width: 156px;
+  height: 221px;
+  border-radius: 0 100px 100px 0;
+  background-color: rgba(123, 74, 155, 0.3);
+}
+body .content {
+  height: 581px;
+  margin-top: 126px;
+  margin-left: 118.5px;
+  margin-right: 118.5px;
+  background: rgba(123, 74, 155, 0.1019607843);
+  border-radius: 32px;
+}
+body .content .m-content {
+  text-align: center;
+}
+body .content .m-content h1 {
+  padding-top: 58px;
+  padding-bottom: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 44px;
+  color: var(--secondary-color);
+}
+body .content .m-content p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  color: var(--paragraph-color);
+  margin-bottom: 32px;
+}
+body .content .m-flex {
+  display: flex;
+  gap: 38px;
+}
+body .content .m-flex .m-10, body .content .m-flex .m-11 {
+  margin-left: 91px;
+}
+body .content .m-flex .m-10 div, body .content .m-flex .m-11 div {
+  width: 434px;
+  color: var(--paragraph-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+body .content .m-flex .m-10 div p, body .content .m-flex .m-11 div p {
+  background: #D9D9D9;
+  width: 50px;
+  height: 20px;
+  margin-top: 7px;
+  border-radius: 50%;
+}
+body .content .m-flex .m-11 {
+  margin-right: 94px;
+  margin-left: 0;
+}
+body .images, body .image2 {
+  margin-top: 72px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+body .images .t-image, body .image2 .t-image {
+  text-align: center;
+}
+body .images .t-image h1, body .image2 .t-image h1 {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 44px;
+  color: var(--secondary-color);
+}
+body .images .t-image p, body .image2 .t-image p {
+  margin-bottom: 32px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  color: var(--paragraph-color);
+}
+body .images .i-row, body .images .i-rows, body .image2 .i-row, body .image2 .i-rows {
+  display: flex;
+  gap: 44px;
+}
+body .images .i-row div, body .images .i-rows div, body .image2 .i-row div, body .image2 .i-rows div {
+  background-color: transparent;
+  overflow: hidden;
+}
+body .images .i-row div img, body .images .i-rows div img, body .image2 .i-row div img, body .image2 .i-rows div img {
+  transition: transform 0.2s ease-in-out;
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body .images .i-row div img:hover, body .images .i-rows div img:hover, body .image2 .i-row div img:hover, body .image2 .i-rows div img:hover {
+  transform: scale(1.2);
+}
+body .images span, body .image2 span {
+  text-align: center;
+  display: block;
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  color: var(--paragraph-color);
+}
+body .image2 {
+  margin-top: 44px;
+}
+body .image2 .i-rows {
+  margin-bottom: 80px;
+}
+body footer {
+  background: rgba(20, 12, 27, 0.1);
+  height: 447px;
+  text-align: center;
+}
+body footer .footer-wrapper {
+  padding-top: 88px;
+  text-align: -webkit-center;
+}
+body footer .footer-wrapper h1 {
+  width: 456px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  color: var(--secondary-color);
+}
+body footer .footer-wrapper p {
+  margin-top: 24px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  color: var(--paragraph-color);
+}
+body footer .btn-group {
+  justify-content: center;
+  margin-top: 20px;
+  display: flex;
+  gap: 32px;
+}
+body footer .btn-group .mobile-btn {
+  display: flex;
+  gap: 32px;
+}
+body footer .btn-group button {
+  background: rgba(123, 74, 155, 0.25);
+  color: var(--babs-color);
+  width: 222px;
+  height: 56px;
+  padding: 6px 24px 6px 24px;
+  border-radius: 200px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  line-height: 44px;
+}
+body footer .footer-p {
+  margin-top: 67px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  color: var(--footer-p);
+}
+
+@media (max-width: 600px) {
+  body .hero {
+    margin-left: 25px;
+    margin-right: 24px;
+  }
+  body .hero nav h1 {
+    margin-top: 20px;
+  }
+  body .container {
+    justify-content: center;
+    margin-left: 25px;
+    margin-right: 24px;
+    margin-top: 20px;
+    border-radius: 20px;
+    height: 777px;
+  }
+  body .container .info {
+    text-align: center;
+    margin-top: 64px;
+    margin-left: 0;
+  }
+  body .container .info h1 {
+    margin-left: 52px;
+    margin-right: 51px;
+    width: 278px;
+    font-size: 24px;
+  }
+  body .container .info p {
+    margin-left: 41px;
+    margin-right: 40px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    width: 300px;
+  }
+  body .scrolling {
+    width: 100%;
+    height: 39px;
+    margin-top: 20px;
+  }
+  body .scrolling .text-scrolling {
+    font-size: 28px;
+    line-height: 39px;
+  }
+  body .m-collection {
+    margin-left: 25px;
+    margin-right: 24px;
+  }
+  body .m-collection h2 {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  body .m-collection p {
+    margin-bottom: 16px;
+  }
+  body .m-collection .details-video {
+    width: 325px;
+  }
+  body .f-details {
+    margin-left: 25px;
+    margin-right: 24px;
+    margin-top: 40px;
+    height: 644px;
+    border-radius: 20px;
+  }
+  body .f-details .details {
+    display: block;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  body .f-details .details .details1 {
+    margin-bottom: 0px;
+  }
+  body .f-details .details .details2 {
+    margin-bottom: 0px;
+  }
+  body .f-details .details .details3 {
+    margin-bottom: 0px;
+  }
+  body .f-details .details h2 {
+    margin-bottom: 12px;
+  }
+  body .f-details .details p {
+    margin-bottom: 48px;
+    width: 300px;
+    height: 96px;
+  }
+  body .about {
+    margin-left: 25px;
+    margin-right: 24px;
+  }
+  body .about .d-flex {
+    display: block;
+    gap: 0px;
+  }
+  body .about .d-flex img {
+    height: 326px;
+    width: 326px;
+    border-radius: 20px;
+    margin-top: 40px;
+  }
+  body .about .d-flex .r-flex {
+    text-align: center;
+    margin-top: 40px;
+  }
+  body .about .d-flex .r-flex p {
+    margin-bottom: 20px;
+  }
+  body .about .d-flex .r-flex h1 {
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 12px;
+  }
+  body .about .d-flex .r-flex .bio {
+    margin-bottom: 36px;
+    width: 326px;
+  }
+  body .about .d-flex .r-flex .social-icons {
+    justify-content: center;
+  }
+  body .about .d-flex .r-flex .social-icons a i {
+    margin-top: 36px;
+  }
+  body .lorem {
+    margin-left: 25px;
+    margin-right: 24px;
+  }
+  body .lorem .lorem-ipsum {
+    text-align: center;
+    margin-top: 48.38px;
+  }
+  body .lorem .lorem-ipsum h1 {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  body .lorem .achievement, body .lorem .achievement1, body .lorem .achievement2, body .lorem .achievement3, body .lorem .achievement4 {
+    display: block;
+    gap: 0px;
+    margin-top: 45.2px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  body .lorem .achievement .right-text, body .lorem .achievement1 .right-text, body .lorem .achievement2 .right-text, body .lorem .achievement3 .right-text, body .lorem .achievement4 .right-text {
+    width: 326px;
+  }
+  body .lorem .achievement .right-text h1, body .lorem .achievement1 .right-text h1, body .lorem .achievement2 .right-text h1, body .lorem .achievement3 .right-text h1, body .lorem .achievement4 .right-text h1 {
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: 20.4px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  body .lorem .achievement .right-text li, body .lorem .achievement1 .right-text li, body .lorem .achievement2 .right-text li, body .lorem .achievement3 .right-text li, body .lorem .achievement4 .right-text li {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 500;
+    color: var(--paragraph-color);
+  }
+  body .lorem .achievement .border, body .lorem .achievement1 .border, body .lorem .achievement2 .border, body .lorem .achievement3 .border, body .lorem .achievement4 .border {
+    align-self: center;
+    gap: 54.92px;
+    justify-content: center;
+  }
+  body .lorem .achievement .border .border-left, body .lorem .achievement1 .border .border-left, body .lorem .achievement2 .border .border-left, body .lorem .achievement3 .border .border-left, body .lorem .achievement4 .border .border-left {
+    width: 86.54px;
+    height: 122.6px;
+    border-radius: 55.47px 0 0 55.47px;
+  }
+  body .lorem .achievement .border h1, body .lorem .achievement1 .border h1, body .lorem .achievement2 .border h1, body .lorem .achievement3 .border h1, body .lorem .achievement4 .border h1 {
+    font-size: 32.81px;
+    line-height: 57.42px;
+    left: 4.5rem;
+    top: 2.5rem;
+  }
+  body .lorem .achievement .border .a-year, body .lorem .achievement1 .border .a-year, body .lorem .achievement2 .border .a-year, body .lorem .achievement3 .border .a-year, body .lorem .achievement4 .border .a-year {
+    font-size: 32.67px;
+    line-height: 57.17px;
+    left: 6.2rem;
+  }
+  body .lorem .achievement .border .border-right, body .lorem .achievement1 .border .border-right, body .lorem .achievement2 .border .border-right, body .lorem .achievement3 .border .border-right, body .lorem .achievement4 .border .border-right {
+    width: 86.54px;
+    height: 122.6px;
+    border-radius: 0 55.47px 55.47px 0;
+  }
+  body .lorem .achievement1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  body .lorem .achievement2 .border h1, body .lorem .achievement4 .border h1 {
+    left: 7.5rem;
+  }
+  body .lorem .achievement3 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  body .content {
+    height: 100%;
+    margin-top: 40px;
+    margin-left: 24px;
+    margin-right: 25px;
+    border-radius: 20px;
+  }
+  body .content .m-content {
+    text-align: center;
+  }
+  body .content .m-content h1 {
+    padding-top: 61px;
+    font-size: 18px;
+    line-height: 36px;
+  }
+  body .content .m-content p {
+    margin-bottom: 70px;
+    margin-left: 29px;
+    margin-right: 30px;
+  }
+  body .content .m-flex {
+    display: block;
+    gap: 0px;
+  }
+  body .content .m-flex .m-10, body .content .m-flex .m-11 {
+    margin-left: 40px;
+  }
+  body .content .m-flex .m-10 div, body .content .m-flex .m-11 div {
+    width: 260px;
+    gap: 26px;
+    margin-bottom: 0px;
+    padding-bottom: 36px;
+  }
+  body .content .m-flex .m-10 div p, body .content .m-flex .m-11 div p {
+    width: 40px;
+    height: 10px;
+    margin-top: 9px;
+  }
+  body .images, body .image2 {
+    margin-top: 38px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  body .images .t-image, body .image2 .t-image {
+    text-align: center;
+  }
+  body .images .t-image h1, body .image2 .t-image h1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  body .images .t-image p, body .image2 .t-image p {
+    margin-bottom: 36px;
+    margin-left: 24px;
+    margin-right: 25px;
+  }
+  body .images .i-row, body .images .i-rows, body .image2 .i-row, body .image2 .i-rows {
+    display: block;
+    gap: 0px;
+  }
+  body .images .i-row div, body .images .i-rows div, body .image2 .i-row div, body .image2 .i-rows div {
+    margin-left: 81px;
+    margin-right: 81.87px;
+  }
+  body .images .i-row div img, body .images .i-rows div img, body .image2 .i-row div img, body .image2 .i-rows div img {
+    width: 100%;
+  }
+  body .images .i-row div img:hover, body .images .i-rows div img:hover, body .image2 .i-row div img:hover, body .image2 .i-rows div img:hover {
+    transform: scale(1.2);
+  }
+  body .images span, body .image2 span {
+    margin-top: 11.97px;
+    margin-bottom: 28px;
+  }
+  body .image2 {
+    margin-top: 0px;
+  }
+  body .image2 .i-rows {
+    margin-bottom: 46px;
+  }
+  body footer {
+    height: 100%;
+    text-align: center;
+  }
+  body footer .footer-wrapper {
+    padding-top: 64px;
+    text-align: -webkit-center;
+  }
+  body footer .footer-wrapper h1 {
+    width: 278px;
+    font-size: 28px;
+    line-height: 44px;
+  }
+  body footer .footer-wrapper p {
+    margin-left: 25px;
+    margin-right: 24px;
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 32px;
+  }
+  body footer .btn-group {
+    justify-content: center;
+    margin-top: 37px;
+    display: block;
+    gap: 8px;
+    margin-left: 19px;
+    margin-right: 27px;
+  }
+  body footer .btn-group .mobile-btn {
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  body footer .btn-group button {
+    width: 161px;
+    height: 40px;
+    padding: 6px 18px 6px 18px;
+    border-radius: 200px;
+    font-size: 14px;
+    border: none;
+    line-height: 28px;
+  }
+  body footer .btn-group .btn-last {
+    display: block;
+    margin-left: 5.3rem;
+  }
+  body footer .footer-p {
+    margin-top: 50px;
+    padding-bottom: 13px;
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=style.css.map */
