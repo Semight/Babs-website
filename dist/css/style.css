@@ -26,6 +26,13 @@
   --footer-color: #140C1B;
   --footer-p: rgba(229, 219, 235, 0.7);
 }
+.dark-theme .toggle .fa-sun {
+  color: #140C1B;
+}
+.dark-theme .toggle .ball {
+  background-color: #fff;
+  transform: translateX(30px);
+}
 
 body {
   margin: 0 auto;
@@ -40,6 +47,7 @@ body .hero {
 body .hero nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 body .hero nav h1 {
   font-weight: 600;
@@ -48,10 +56,42 @@ body .hero nav h1 {
   color: var(--babs-color);
   margin-top: 32px;
 }
-body .hero nav #icon {
-  margin-top: 30px;
+body .hero nav input {
+  display: none;
+}
+body .hero nav .toggle {
   cursor: pointer;
-  width: 25px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+  height: 30px;
+  border-radius: 50px;
+  background: rgba(123, 74, 155, 0.1);
+  transition: 0.2s;
+  top: 8px;
+}
+body .hero nav .toggle i {
+  width: 50%;
+  line-height: 30px;
+  text-align: center;
+  font-size: 10px;
+  z-index: 1;
+}
+body .hero nav .toggle .fa-moon {
+  color: #fff;
+}
+body .hero nav .toggle .fa-sun {
+  color: #fff;
+}
+body .hero nav .toggle .ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #140C1B;
+  margin: 5px;
+  border-radius: 50%;
+  transition: 0.3s ease-out;
 }
 body .container {
   display: flex;
@@ -114,7 +154,7 @@ body .scrolling .text-scrolling {
 }
 @-webkit-keyframes scrolling {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0, 0);
   }
   100% {
     transform: translateX(-100%);
@@ -122,7 +162,7 @@ body .scrolling .text-scrolling {
 }
 @keyframes scrolling {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0, 0);
   }
   100% {
     transform: translateX(-100%);
@@ -407,7 +447,6 @@ body .images .i-row, body .images .i-rows, body .image2 .i-row, body .image2 .i-
 }
 body .images .i-row div, body .images .i-rows div, body .image2 .i-row div, body .image2 .i-rows div {
   background-color: transparent;
-  overflow: hidden;
 }
 body .images .i-row div img, body .images .i-rows div img, body .image2 .i-row div img, body .image2 .i-rows div img {
   transition: transform 0.2s ease-in-out;
@@ -495,6 +534,9 @@ body footer .footer-p {
   body .hero nav h1 {
     margin-top: 20px;
   }
+  body .hero nav .toggle {
+    top: 5px;
+  }
   body .container {
     justify-content: center;
     margin-left: 25px;
@@ -573,7 +615,7 @@ body footer .footer-p {
   }
   body .f-details .details p {
     margin-bottom: 48px;
-    width: 300px;
+    width: 250px;
     height: 96px;
   }
   body .about {
@@ -661,7 +703,7 @@ body footer .footer-p {
     font-size: 32.81px;
     line-height: 57.42px;
     left: 4.5rem;
-    top: 2.5rem;
+    top: 33px;
   }
   body .lorem .achievement .border .a-year, body .lorem .achievement1 .border .a-year, body .lorem .achievement2 .border .a-year, body .lorem .achievement3 .border .a-year, body .lorem .achievement4 .border .a-year {
     font-size: 32.67px;

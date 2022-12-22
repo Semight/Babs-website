@@ -37,6 +37,17 @@ $footer-color: rgba(20, 12, 27, 0.1);
     --content-color: rgba(123, 74, 155, 0.2);
     --footer-color: #140C1B;
     --footer-p: rgba(229, 219, 235, 0.7);
+
+    .toggle {
+        .fa-sun {
+            color: #140C1B;
+        }
+        .ball {
+            background-color: #fff;
+            transform: translateX(30px);
+        }
+    
+    }
 }
 
 body {
@@ -51,6 +62,7 @@ body {
         nav {
             display: flex;
             justify-content: space-between;
+            align-items: center;
 
             h1 {
                 font-weight: 600;
@@ -60,10 +72,54 @@ body {
                 margin-top: 32px;
             }
 
-            #icon {
-                margin-top: 30px;
+            // #icon {
+            //     margin-top: 30px;
+            //     cursor: pointer;
+            //     width: 25px;
+            // }
+
+            input {
+                display: none;
+            }
+
+            .toggle {
                 cursor: pointer;
-                width: 25px;
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                width: 60px;
+                height: 30px;
+                border-radius: 50px;
+                background: rgba(123, 74, 155, 0.1);
+                transition: .2s;
+                top: 8px;
+
+                i {
+                    width: 50%;
+                    line-height: 30px;
+                    text-align: center;
+                    font-size: 10px;
+                    z-index: 1;
+                }
+
+                .fa-moon {
+                    color: #fff;
+                }
+
+                .fa-sun {
+                    color: #fff;
+                }
+
+                .ball {
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    background: #140C1B;
+                    margin: 5px;
+                    border-radius: 50%;
+                    transition: .3s ease-out;
+                }
+
             }
         }
     }
@@ -134,7 +190,7 @@ body {
 
         @keyframes scrolling {
             0% {
-                transform: translateX(100%);
+                transform: translateX(0,0);
             }
             100% {
                 transform: translateX(-100%);
@@ -477,7 +533,6 @@ body {
 
             div {
                 background-color: transparent;
-                overflow: hidden;
 
                 img {
                     transition: transform .2s ease-in-out;
@@ -588,6 +643,10 @@ body {
                     h1 {
                         margin-top: 20px;
                     }
+
+                    .toggle {
+                        top: 5px;
+                    }
                 }
             }
 
@@ -683,7 +742,7 @@ body {
         
                 p {
                     margin-bottom: 48px;
-                    width: 300px;
+                    width: 250px;
                     height: 96px;
                 }
 
@@ -793,7 +852,7 @@ body {
                             font-size: 32.81px;
                             line-height: 57.42px;
                             left: 4.5rem;
-                            top: 2.5rem;
+                            top: 33px;
                         }
                         
                         .a-year {
