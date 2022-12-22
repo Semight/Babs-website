@@ -154,7 +154,7 @@ body .scrolling .text-scrolling {
 }
 @-webkit-keyframes scrolling {
   0% {
-    transform: translateX(0, 0);
+    transform: translateX(100%);
   }
   100% {
     transform: translateX(-100%);
@@ -162,7 +162,7 @@ body .scrolling .text-scrolling {
 }
 @keyframes scrolling {
   0% {
-    transform: translateX(0, 0);
+    transform: translateX(100%);
   }
   100% {
     transform: translateX(-100%);
