@@ -159,8 +159,8 @@ body .container .info-images .info1 .button::after {
   border-color: transparent #fff;
   border-style: solid;
   border-width: 15px 10px 15px 0px;
-  top: 7px;
-  right: 100%;
+  top: 5px;
+  right: 96%;
 }
 body .container .info-images h2 {
   position: absolute;
@@ -173,21 +173,29 @@ body .container .info-images h2 {
   text-align: center;
 }
 body .container .info-images .info2 .opinion-btn {
-  font-size: 16px;
   font-weight: 500;
+  font-size: 16px;
   line-height: 18px;
-  color: rgb(20, 12, 27);
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 91% 75%, 91% 100%, 77% 77%, 0% 75%);
-          clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 91% 75%, 91% 100%, 77% 77%, 0% 75%);
-  width: 150px;
-  height: 55px;
+  text-align: center;
+  width: 155px;
+  padding: 12px 16px 12px 16px;
+  height: 42px;
   background: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 2px 16px 12px 16px;
-  bottom: 9.5rem;
-  left: 13rem;
+  color: rgb(20, 12, 27);
   position: relative;
+  border: none;
+  bottom: 9rem;
+  left: 13rem;
+  border-radius: 8px;
+}
+body .container .info-images .info2 .opinion-btn::after {
+  content: "";
+  position: absolute;
+  border-color: transparent #fff;
+  border-style: solid;
+  border-width: 15px 0px 15px 10px;
+  top: 5px;
+  left: 96%;
 }
 body .container .info-images .info2 img {
   position: relative;
@@ -366,6 +374,7 @@ body .about .d-flex .r-flex .social-icons a i {
   list-style: none;
   border-radius: 50%;
   height: 31.62px;
+  color: #7B4A9B;
   margin-top: 32px;
   padding-top: 7px;
   text-align: center;
@@ -491,7 +500,7 @@ body .content .m-flex .m-10 div i, body .content .m-flex .m-11 div i {
   font-size: 17px;
   height: 30px;
   margin-top: 4px;
-  padding: 7px;
+  padding: 6px;
   border-radius: 50%;
 }
 body .content .m-flex .m-11 {
@@ -528,14 +537,10 @@ body .images .i-row div, body .images .i-rows div, body .image2 .i-row div, body
   background-color: transparent;
 }
 body .images .i-row div img, body .images .i-rows div img, body .image2 .i-row div img, body .image2 .i-rows div img {
-  transition: transform 0.2s ease-in-out;
   width: 100%;
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
-}
-body .images .i-row div img:hover, body .images .i-rows div img:hover, body .image2 .i-row div img:hover, body .image2 .i-rows div img:hover {
-  transform: scale(1.2);
 }
 body .images span, body .image2 span {
   text-align: center;
@@ -580,7 +585,7 @@ body footer .btn-group {
 }
 body footer .btn-group button {
   background: rgba(123, 74, 155, 0.25);
-  color: var(--babs-color);
+  color: #7B4A9B;
   width: 285px;
   height: 56px;
   padding: 6px 24px 6px 24px;
@@ -599,7 +604,7 @@ body footer .footer-p {
   color: var(--footer-p);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   body .hero {
     margin-left: 25px;
     margin-right: 24px;
@@ -608,7 +613,7 @@ body footer .footer-p {
     margin-top: 20px;
   }
   body .hero nav .toggle {
-    top: 5px;
+    top: 12px;
   }
   body .container {
     display: block;
@@ -620,7 +625,7 @@ body footer .footer-p {
   }
   body .container .info {
     text-align: center;
-    margin-top: 64px;
+    margin-top: 20px;
     margin-left: 0;
   }
   body .container .info h1 {
@@ -628,6 +633,7 @@ body footer .footer-p {
     margin-right: 51px;
     width: 278px;
     font-size: 24px;
+    padding-top: 64px;
   }
   body .container .info p {
     margin-left: 41px;
@@ -646,24 +652,24 @@ body footer .footer-p {
     width: 104px;
     padding: 10px 12px 10px 12px;
     height: 38px;
-    bottom: 136px;
-    right: -13rem;
+    bottom: 100px;
+    right: 1rem;
   }
   body .container .info-images h2 {
-    right: 4rem;
-    top: 40.5rem;
+    right: 8rem;
+    top: 41.5rem;
     font-size: 24px;
   }
   body .container .info-images .info2 .opinion-btn {
     width: 140px;
     height: 40px;
     padding: 10px 12px 10px 12px;
-    bottom: -5.5rem;
-    left: 3rem;
+    bottom: 5rem;
+    left: 4rem;
   }
   body .container .info-images .info2 img {
-    top: 0rem;
-    left: 8rem;
+    top: 2rem;
+    left: 0rem;
     width: 186px;
     height: 186px;
   }
@@ -813,7 +819,7 @@ body footer .footer-p {
     flex-direction: column-reverse;
   }
   body .lorem .achievement2 .border h1, body .lorem .achievement4 .border h1 {
-    left: 7.5rem;
+    left: 8.5rem;
   }
   body .lorem .achievement3 {
     display: flex;
@@ -885,9 +891,6 @@ body footer .footer-p {
   }
   body .images .i-row div img, body .images .i-rows div img, body .image2 .i-row div img, body .image2 .i-rows div img {
     width: 100%;
-  }
-  body .images .i-row div img:hover, body .images .i-rows div img:hover, body .image2 .i-row div img:hover, body .image2 .i-rows div img:hover {
-    transform: scale(1.2);
   }
   body .images span, body .image2 span {
     margin-top: 11.97px;

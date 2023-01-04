@@ -190,8 +190,8 @@ body {
                         border-color: transparent #fff;
                         border-style: solid;
                         border-width: 15px 10px 15px 0px;
-                        top: 7px;
-                        right: 100%;
+                        top: 5px;
+                        right: 96%;
                     }
                 }
             }
@@ -208,22 +208,49 @@ body {
             }
 
             .info2 {
+
                 .opinion-btn {
-                    font-size: 16px;
                     font-weight: 500;
+                    font-size: 16px;
                     line-height: 18px;
-                    color: rgba(20, 12, 27, 1);
-                    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 91% 75%, 91% 100%, 77% 77%, 0% 75%);
-                    width: 150px;
-                    height: 55px;
+                    text-align: center;
+                    width: 155px;
+                    padding: 12px 16px 12px 16px;
+                    height: 42px;
                     background: #fff;
-                    border: none;
-                    border-radius: 8px;
-                    padding: 2px 16px 12px 16px;
-                    bottom: 9.5rem;
-                    left: 13rem;
+                    color: rgba(20, 12, 27, 1);
                     position: relative;
+                    border: none;
+                    bottom: 9rem;
+                    left: 13rem;
+                    border-radius: 8px;
+        
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        border-color: transparent #fff;
+                        border-style: solid;
+                        border-width: 15px 0px 15px 10px;
+                        top: 5px;
+                        left: 96%;
+                    }
                 }
+                // .opinion-btn {
+                //     font-size: 16px;
+                //     font-weight: 500;
+                //     line-height: 18px;
+                //     color: rgba(20, 12, 27, 1);
+                //     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 91% 75%, 91% 100%, 77% 77%, 0% 75%);
+                //     width: 150px;
+                //     height: 55px;
+                //     background: #fff;
+                //     border: none;
+                //     border-radius: 8px;
+                //     padding: 2px 16px 12px 16px;
+                //     bottom: 9.5rem;
+                //     left: 13rem;
+                //     position: relative;
+                // }
 
                 img {
                     position: relative;
@@ -435,6 +462,7 @@ body {
                             list-style: none;
                             border-radius: 50%;
                             height: 31.62px;
+                            color: #7B4A9B;
                             margin-top: 32px;
                             padding-top: 7px;
                             text-align: center;
@@ -584,7 +612,7 @@ body {
                         font-size: 17px;
                         height: 30px;
                         margin-top: 4px;
-                        padding: 7px;
+                        padding: 6px;
                         border-radius: 50%;
                     }
                 }
@@ -632,14 +660,14 @@ body {
                 background-color: transparent;
 
                 img {
-                    transition: transform .2s ease-in-out;
+                    // transition: transform .2s ease-in-out;
                     width: 100%;
                     height: auto;
                     object-fit: contain;
 
-                    &:hover {
-                        transform: scale(1.2);
-                    }
+                    // &:hover {
+                    //     transform: scale(1.2);
+                    // }
                 }
             }
 
@@ -697,7 +725,7 @@ body {
 
             button {
                 background: $btn-group;
-                color: var(--babs-color);
+                color: $babs-color;
                 width: 285px;
                 height: 56px;
                 padding: 6px 24px 6px 24px;
@@ -722,7 +750,7 @@ body {
     
 }
 
-@include sm {
+@include md {
     body {
         
             .hero {
@@ -735,7 +763,7 @@ body {
                     }
 
                     .toggle {
-                        top: 5px;
+                        top: 12px;
                     }
                 }
             }
@@ -750,7 +778,7 @@ body {
         
                 .info {
                     text-align: center;
-                    margin-top: 64px;
+                    margin-top: 20px;
                     margin-left: 0;
         
                     h1 {
@@ -758,6 +786,7 @@ body {
                         margin-right: 51px;
                         width: 278px;
                         font-size: 24px;
+                        padding-top: 64px;
                     }
         
                     p {
@@ -782,14 +811,14 @@ body {
                             width: 104px;
                             padding: 10px 12px 10px 12px;
                             height: 38px;
-                            bottom: 136px;
-                            right: -13rem;
+                            bottom: 100px;
+                            right: 1rem;
                         }
                     }
         
                     h2 {
-                        right: 4rem;
-                        top: 40.5rem;
+                        right: 8rem;
+                        top: 41.5rem;
                         font-size: 24px;
                     }
         
@@ -798,13 +827,13 @@ body {
                             width: 140px;
                             height: 40px;
                             padding: 10px 12px 10px 12px;
-                            bottom: -5.5rem;
-                            left: 3rem;
+                            bottom: 5rem;
+                            left: 4rem;
                         }
         
                         img {
-                            top: 0rem;
-                            left: 8rem;
+                            top: 2rem;
+                            left: 0rem;
                             width: 186px;
                             height: 186px;
                         }
@@ -1012,7 +1041,7 @@ body {
             .achievement2, .achievement4 {
                 .border {
                     h1 {
-                        left: 7.5rem;
+                        left: 8.5rem;
                     }
                 }
             }
@@ -1109,9 +1138,9 @@ body {
                     img {
                         width: 100%;
     
-                        &:hover {
-                            transform: scale(1.2);
-                        }
+                        // &:hover {
+                        //     transform: scale(1.2);
+                        // }
                     }
                 }
     
@@ -1193,9 +1222,6 @@ body {
     }
 }
 
-@include md {
-      
-}
 
 @include lg {
     
