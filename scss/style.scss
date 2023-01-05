@@ -16,7 +16,7 @@ $btn-group: rgba(123, 74, 155, 0.25);
 $content-color: #FAF4FE;
 $footer-color: rgba(20, 12, 27, 0.1);
 
-::root {
+:root {
     --primary-color: $($primary-color);
     --secondary-color: $($secondary-color);
     --babs-color: $($babs-color);
@@ -51,6 +51,7 @@ $footer-color: rgba(20, 12, 27, 0.1);
 }
 
 body {
+    width: 100%;
     margin: 0 auto;
     background: var(--primary-color);
     color: var(--secondary-color);
@@ -84,7 +85,7 @@ body {
                 border-radius: 50px;
                 background: rgba(123, 74, 155, 0.1);
                 transition: .2s;
-                top: 8px;
+                top: 12px;
 
                 i {
                     width: 50%;
@@ -124,21 +125,25 @@ body {
         background: $container-color;
         border-radius: 32px;
         height: 654px;
+        gap: 50px;
 
         .info {
-            margin-top: 159px;
+            margin-top: 164px;
             margin-left: 92px;
 
             h1 {
                 width: 385px;
+                // width: 100%;
                 font-weight: 700;
                 font-size: 32px;
                 line-height: 44px;
             }
 
             p {
-                margin: 28px 0;
+                margin-top: 28px;
+                margin-bottom: 20px;
                 width: 416px;
+                // width: 100%;
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 32px;
@@ -161,108 +166,18 @@ body {
         }
 
         .info-images {
-            .info1{
-                img {
-                    position: relative;
-                    top: 93px;
-                    width: 256px;
-                    height: 256px;
-                }
-                .button {
-                    font-weight: 500;
-                    font-size: 16px;
-                    line-height: 18px;
-                    text-align: center;
-                    width: 123px;
-                    padding: 12px 16px 12px 16px;
-                    height: 42px;
-                    background: #fff;
-                    color: rgba(20, 12, 27, 1);
-                    position: relative;
-                    border: none;
-                    bottom: 113px;
-                    right: 2rem;
-                    border-radius: 8px;
-        
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        border-color: transparent #fff;
-                        border-style: solid;
-                        border-width: 15px 10px 15px 0px;
-                        top: 5px;
-                        right: 96%;
-                    }
-                }
-            }
+            .info1 {
+                margin-top: 93px;
 
-            h2 {
-                position: absolute;
-                right: 23rem;
-                top: 19.5rem;
-                color: #7B4A9B;
-                font-size: 32px;
-                line-height: 35.55px;
-                font-weight: 700;
-                text-align: center;
+                img {
+                    width: 100%;
+                }
             }
 
             .info2 {
-
-                .opinion-btn {
-                    font-weight: 500;
-                    font-size: 16px;
-                    line-height: 18px;
-                    text-align: center;
-                    width: 155px;
-                    padding: 12px 16px 12px 16px;
-                    height: 42px;
-                    background: #fff;
-                    color: rgba(20, 12, 27, 1);
-                    position: relative;
-                    border: none;
-                    bottom: 9rem;
-                    left: 13rem;
-                    border-radius: 8px;
-        
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        border-color: transparent #fff;
-                        border-style: solid;
-                        border-width: 15px 0px 15px 10px;
-                        top: 5px;
-                        left: 96%;
-                    }
-                }
-                // .opinion-btn {
-                //     font-size: 16px;
-                //     font-weight: 500;
-                //     line-height: 18px;
-                //     color: rgba(20, 12, 27, 1);
-                //     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 91% 75%, 91% 100%, 77% 77%, 0% 75%);
-                //     width: 150px;
-                //     height: 55px;
-                //     background: #fff;
-                //     border: none;
-                //     border-radius: 8px;
-                //     padding: 2px 16px 12px 16px;
-                //     bottom: 9.5rem;
-                //     left: 13rem;
-                //     position: relative;
-                // }
-
-                img {
-                    position: relative;
-                    top: 2rem;
-                    left: 8rem;
-                    width: 285px;
-                    height: 285px;
-                }
+                display: none;
             }
-        }
-
-        
+            }
     }
 
     .scrolling {
@@ -318,11 +233,11 @@ body {
 
     .f-details {
         margin-left: 120px;
-        // margin-right: 117px;
-        margin-right: 60px;
+        margin-right: 117px;
+        // margin-right: 60px;
         margin-top: 72px;
         background: $container-color;
-        height: 277px;
+        // height: 277px;
         border-radius: 32px;
 
         h2 {
@@ -336,36 +251,37 @@ body {
 
         .details {
             display: flex;
-            align-items: center;
+            // align-items: center;
             margin-left: 61px;
             margin-right: 61px;
             padding-top: 32px;
             padding-bottom: 64px;
             align-items: baseline;
+            gap: 55px;
 
             .details1 {
-                width: 229px;
-                margin-right: 55px;
-                // flex: 1;
+                // width: 229px;
+                // margin-right: 55px;
+                flex: 1;
                 
             }
             
             .details2 {
-                width: 229px;
-                margin-right: 55px;
-                // flex: 1;
+                // width: 229px;
+                // margin-right: 55px;
+                flex: 1;
             }
     
             .details3 {
-                width: 229px;
-                margin-right: 55px;
-                // flex: 1;
+                // width: 229px;
+                // margin-right: 55px;
+                flex: 1;
                 
             }
 
             .details4 {
-                width: 229px;
-                // flex: 1;
+                // width: 229px;
+                flex: 1;
                 
             }
     
@@ -413,7 +329,7 @@ body {
                     font-size: 16px;
                     line-height: 32px;
                     font-weight: 500;
-                    color: var(--babs-color);
+                    color: $babs-color;
                     margin-bottom: 16px;
                 }
 
@@ -589,13 +505,12 @@ body {
 
         .m-flex {
             display: flex;
-            gap: 38px;
+            gap: 43px;
 
             .m-10, .m-11 {
-                margin-left: 91px;
+                margin-left: 96.5px;
 
                 div {
-                    width: 434px;
                     color: var(--paragraph-color);
                     font-size: 16px;
                     font-weight: 500;
@@ -619,84 +534,18 @@ body {
             }
 
             .m-11 {
-                margin-right: 94px;
+                margin-right: 93.5px;
                 margin-left: 0;
             }
         }
 
     }
 
-    .images, .image2 {
-        margin-top: 72px;
-        margin-left: 120px;
-        margin-right: 120px;
-
-        .t-image {
-            text-align: center;
-
-            h1 {
-                margin-bottom: 8px;
-                font-size: 24px;
-                font-weight: 700;
-                line-height: 44px;
-                color: var(--secondary-color);
-            }
-
-            p {
-                margin-bottom: 32px;
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 32px;
-                color: var(--paragraph-color);
-                
-            }
-        }
-
-        .i-row, .i-rows {
-            display: flex;
-            gap: 44px;
-
-            div {
-                background-color: transparent;
-
-                img {
-                    // transition: transform .2s ease-in-out;
-                    width: 100%;
-                    height: auto;
-                    object-fit: contain;
-
-                    // &:hover {
-                    //     transform: scale(1.2);
-                    // }
-                }
-            }
-
-        }
-
-        
-        span {
-            text-align: center;
-            display: block;
-            margin-top: 12px;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 32px;
-            color: var(--paragraph-color);
-        }
-    }
-
-    .image2 {
-        margin-top: 44px;
-
-        .i-rows {
-            margin-bottom: 80px;
-
-        }
-    }
-
     footer {
-        background: $footer-color;
-        height: 447px;
+        margin-top: 96px;
+        // background: var(--footer-color);
+        background-color: $footer-color;
+        // height: 447px;
         text-align: center;
 
         .footer-wrapper {
@@ -740,7 +589,7 @@ body {
 
         .footer-p {
             margin-top: 39px;
-            margin-bottom: 24px;
+            padding-bottom: 24px;
             font-size: 16px;
             font-weight: 500;
             line-height: 32px;
@@ -800,57 +649,21 @@ body {
                 }
 
                 .info-images {
-                    .info1{
-                        img {
-                            top: 54.5px;
-                            width: 187px;
-                            height: 187px;
-                            margin-left: 41px;
-                        }
-                        .button {
-                            width: 104px;
-                            padding: 10px 12px 10px 12px;
-                            height: 38px;
-                            bottom: 100px;
-                            right: 1rem;
-                        }
+                    .info1 {
+                        display: none;
                     }
-        
-                    h2 {
-                        right: 8rem;
-                        top: 41.5rem;
-                        font-size: 24px;
-                    }
-        
                     .info2 {
-                        .opinion-btn {
-                            width: 140px;
-                            height: 40px;
-                            padding: 10px 12px 10px 12px;
-                            bottom: 5rem;
-                            left: 4rem;
-                        }
-        
+                        display: block;
+                        margin-top: 54.5px;
+                        margin-left: 41px;
+                        margin-right: 40px;
+
                         img {
-                            top: 2rem;
-                            left: 0rem;
-                            width: 186px;
-                            height: 186px;
+                            width: 100%;
                         }
                     }
                 }
             }
-            
-            // .scrolling {
-            //     width: 100%;
-            //     height: 39px;
-            //     margin-top: 20px;
-                
-            //     .text-scrolling {
-            //         font-size: 28px;
-            //         line-height: 39px;
-            //     }
-            // }
             
             .m-collection {
                 margin-left: 25px;
@@ -923,8 +736,8 @@ body {
                 gap: 0px;
 
                 img {
-                    height: 326px;
-                    width: 326px;
+                    height: 100%;
+                    width: 100%;
                     border-radius: 20px;
                     margin-top: 40px;
 
@@ -946,7 +759,7 @@ body {
                     
                     .bio {
                         margin-bottom: 36px;
-                        width: 326px;
+                        width: 100%;
                     }
                     
                     .social-icons{
@@ -984,7 +797,7 @@ body {
                     margin-right: 0px;
                     
                     .right-text {
-                        width: 326px;
+                        width: 100%;
                         
                         h1 {
                             font-size: 16px;
@@ -1105,69 +918,13 @@ body {
     
         }
 
-        .images, .image2 {
-            margin-top: 48px;
-            margin-left: 0px;
-            margin-right: 0px;
-    
-            .t-image {
-                text-align: center;
-    
-                h1 {
-                    font-size: 20px;
-                    font-weight: 700;
-                    line-height: 40px;
-                }
-    
-                p {
-                    margin-bottom: 36px;
-                    margin-left: 24px;
-                    margin-right: 25px;
-                    
-                }
-            }
-    
-            .i-row, .i-rows {
-                display: block;
-                gap: 0px;
-    
-                div {
-                    margin-left: 81px;
-                    margin-right: 81.87px;
-
-                    img {
-                        width: 100%;
-    
-                        // &:hover {
-                        //     transform: scale(1.2);
-                        // }
-                    }
-                }
-    
-            }
-    
-            
-            span {
-                margin-top: 11.97px;
-                margin-bottom: 28px;
-            }
-        }
-
-        .image2 {
-            margin-top: 0px;
-    
-            .i-rows {
-                margin-bottom: 46px;
-    
-            }
-        }
 
         footer {
             height: 100%;
             text-align: center;
     
             .footer-wrapper {
-                padding-top: 64px;
+                padding-top: 48px;
                 text-align: -webkit-center;
     
                 h1 {
@@ -1222,6 +979,40 @@ body {
     }
 }
 
+@include sm {
+    body {
+        
+
+            .container {
+        
+                .info {
+        
+                    h1 {
+                        margin-left: 30px;
+                        margin-right: 31px;
+                    }
+        
+                    p {
+                        margin-left: 12px;
+                        margin-right: 11px;
+                    }
+        
+                }
+
+            }    
+
+
+        footer {
+
+            .footer-wrapper {
+
+                h1 {
+                    width: 350px;
+                }
+            }
+        }
+    }
+}
 
 @include lg {
     
