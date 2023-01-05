@@ -237,7 +237,7 @@ body .f-details .details p {
   font-size: 16px;
   line-height: 32px;
   font-weight: 500;
-  width: 273px;
+  width: 206px;
   color: var(--secondary-color);
 }
 body .f-details .details p span {
@@ -285,7 +285,7 @@ body .about .d-flex .r-flex .bio {
   width: 573px;
 }
 body .about .d-flex .r-flex .btn {
-  width: 138px;
+  width: 210px;
   height: 48px;
   background: #7B4A9B;
   color: #fff;
@@ -371,7 +371,7 @@ body .lorem .achievement .border h1, body .lorem .achievement1 .border h1, body 
   color: rgba(123, 74, 155, 0.8);
   position: absolute;
   left: 8rem;
-  top: 4rem;
+  top: 3.5rem;
   font-size: 58.98px;
   font-weight: 700;
   line-height: 103.06px;
